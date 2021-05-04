@@ -1,0 +1,21 @@
+@import './sass/reset';
+@import './sass/globals';
+
+@import './sass/nav';
+@import './sass/wrapper';
+@import './sass/offers';
+
+* {
+    box-sizing: border-box;
+}
+
+.chat {
+    position: fixed;
+    background: url(../images/chat.png) center no-repeat;
+    width: 106px;
+    height: 55px;
+    right: 1%;
+    bottom: 5%;
+    cursor: pointer;
+    z-index: 999;
+}
