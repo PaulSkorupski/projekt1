@@ -129,6 +129,7 @@
         color: $clr-300;
         margin: 0 30px;
         cursor: pointer;
+        position: relative;
     }
     .wrapper-menu::before {
         content: '';
@@ -139,6 +140,36 @@
         width: 9px;
         height: 9px;
         transform: translate(-200%, 33%);
+    }
+    .wrapper-menu {
+        z-index: 9;
+    }
+    .wrapper-menu:hover .wrapper-submenu {
+        display: flex;
+    }
+    .wrapper-submenu {
+        top: -60%;
+        left: 50%;
+        display: none;
+        position: absolute;
+        width: 130%;
+        background-color: $bg-300;
+        z-index: -1;
+        transform: translateX(-50%);
+        flex-flow: column nowrap;
+        padding-top: 45px;
+        .submenu-item {
+            transition: all 100ms ease;
+            flex: 1;
+            font-family: $ff-main;
+            font-size: 0.85rem;
+            color: $clr-300;
+            padding: 20px;
+            &:hover {
+                background-color: $bg-accent;
+                color: $clr-100;
+            }
+        }
     }
 }
 

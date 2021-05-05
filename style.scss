@@ -4,6 +4,7 @@
 @import './sass/nav';
 @import './sass/wrapper';
 @import './sass/offers';
+@import './sass/about';
 
 * {
     box-sizing: border-box;
@@ -11,11 +12,70 @@
 
 .chat {
     position: fixed;
-    background: url(../images/chat.png) center no-repeat;
     width: 106px;
     height: 55px;
     right: 1%;
-    bottom: 5%;
+    bottom: 2%;
     cursor: pointer;
     z-index: 999;
+    background-color: #ca2e6d;
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+    border-radius: 50px;
+    user-select: none;
+    .chat-status {
+        position: absolute;
+        width: 17px;
+        height: 17px;
+        border-radius: 50%;
+        background-color: #00f738;
+        top: 0;
+        left: 0;
+        border: 2px solid $bg-100;
+    }
+    .chat-font {
+        flex: 1;
+        color: $clr-100;
+        font-family: $ff-main;
+    }
+    .chat-ico {
+        margin-left: 10px;
+        flex: 1;
+        background: url(./images/chat.svg) center no-repeat;
+        background-size: contain;
+        width: 25px;
+        height: 25px;
+    }
+}
+
+.section-title-cont {
+    padding: 40px 0;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column nowrap;
+    font-family: $ff-main;
+    color: $clr-300;
+    .title-cont {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-flow: column nowrap;
+        line-height: 1.3;
+        .title-font {
+            font-size: 1.25rem;
+            margin: 2px 0;
+        }
+        .tag {
+            font-size: 2rem;
+        }
+        .title-divider {
+            height: 2px;
+            width: 60%;
+            background-color: $bg-accent;
+            margin: 10px 0;
+        }
+    }
 }

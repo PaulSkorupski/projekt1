@@ -38,6 +38,10 @@
         font-weight: 600;
         font-size: 1.15rem;
         cursor: pointer;
+        user-select: none;
+        span {
+            margin: 0 10px;
+        }
     }
     .opt-theme-ico {
         background: url(../images/ico-theme.png) center;

@@ -1,0 +1,77 @@
+.about-align {
+    width: 73%;
+    margin: auto;
+    .title-font {
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+    }
+    span {
+        display: block;
+    }
+}
+
+.about-content-grid {
+    display: flex;
+    background: url(../images/ninja-bg.png) center no-repeat $clr-100;
+}
+
+.about-content-cont {
+    font-family: $ff-main;
+    color: $clr-300;
+    line-height: 1.35;
+    flex: 1;
+    margin-right: 50px;
+    &.fix {
+        margin-left: 50px;
+        margin-right: 0;
+    }
+    .top {
+        margin-left: 100px;
+        .about-font-heading {
+            font-size: 1.75rem;
+            margin-bottom: 40px;
+        }
+    }
+    .img-top {
+        background: url(../images/bg8.png) center no-repeat;
+        background-size: contain;
+        width: 570px;
+        height: 349px;
+        margin-top: 60px;
+    }
+}
+
+.about-content-cont {
+    .img-bottom {
+        background: url(../images/bg7.png) center no-repeat;
+        background-size: contain;
+        width: 570px;
+        height: 349px;
+    }
+    .font-sect-1 {
+        margin-top: 50px;
+        margin-bottom: 30px;
+        max-width: 600px;
+    }
+    .font-sect-2 {
+        max-width: 600px;
+        margin-bottom: 30px;
+    }
+    .about-more a {
+        all: unset;
+        color: $clr-accent;
+        cursor: pointer;
+        font-family: $ff-main;
+        &::after {
+            content: '';
+            display: inline-block;
+            background: url(../images/chevron-right.png) center no-repeat;
+            background-size: contain;
+            width: 20px;
+            height: 20px;
+            position: absolute;
+            transform: translate(85%, 10%);
+        }
+    }
+}
