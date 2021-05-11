@@ -1,0 +1,88 @@
+.newsletter {
+    background-color: $bg-400;
+    padding: 130px 0;
+    .section-title-cont {
+        padding-top: 0;
+    }
+}
+
+.newsletter-align {
+    width: 85%;
+    margin: auto;
+}
+
+.newsletter-content {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    font-family: $ff-main;
+    color: $clr-300;
+    line-height: 1.6;
+}
+
+.newsletter-item {
+    flex: 1;
+}
+
+.newsletter-info-cont {
+    display: flex;
+    justify-content: center;
+    .newsletter-info-font {
+        max-width: 57%;
+        font-weight: 500;
+    }
+}
+
+.newsletter-form-cont {
+    display: flex;
+    .newsletter-form-cont {
+        flex: 1;
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+    }
+}
+
+.newsletter-confirm-align {
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.newsletter-confirm-checkbox-cont {
+    flex: 0.1;
+    .checkbox-background {
+        width: 30px;
+        height: 30px;
+        margin: auto;
+        background-color: $clr-100;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .checkbox {
+            background: url(../images/ico-tick.png) center no-repeat;
+            width: 20px;
+            height: 20px;
+
+            // CHANGE TO NONE TO REMOVE THE TICK
+            display: block;
+            //
+        }
+    }
+}
+
+.newsletter-confirm-font-cont {
+    flex: 10;
+    max-width: 85%;
+    margin: auto;
+}
+
+.newsletter-confirm-cont {
+    .newsletter-confirm-font {
+        font-weight: 500;
+        font-size: 0.85rem;
+    }
+    .newsletter-submit {
+        margin-top: 30px;
+    }
+}

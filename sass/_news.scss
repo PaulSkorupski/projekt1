@@ -1,0 +1,74 @@
+.news {
+    background-color: $bg-300;
+    padding: 130px 0;
+    .section-title-cont {
+        padding-top: 0;
+    }
+}
+
+.news-align {
+    width: 85%;
+    margin: auto;
+}
+
+.news-cont {
+    display: flex;
+    flex-flow: row nowrap;
+    width: 100%;
+}
+
+.news-date-cont {
+    flex: 1;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: flex-end;
+    font-family: $ff-main;
+    color: $clr-300;
+    line-height: 1.3;
+    .news-date {
+        font-size: 2rem;
+    }
+}
+
+.news-divider {
+    height: 210px;
+    width: 2px;
+    background: $bg-100;
+    margin: 0 60px;
+}
+
+.news-content-cont {
+    flex: 4;
+    font-family: $ff-main;
+    color: $clr-300;
+    line-height: 1.5;
+    .news-font-cont {
+        .news-font {
+            margin: 40px 0;
+        }
+        .top {
+            margin-top: 0;
+            font-size: 1.25rem;
+        }
+    }
+}
+
+.news-controls {
+    padding-top: 40px;
+    display: flex;
+    .controls-grid {
+        display: flex;
+        .control-item {
+            background: url(../images/chevron-left--inactive.png) center
+                no-repeat;
+            background-size: contain;
+            width: 20px;
+            height: 22px;
+            margin-right: 40px;
+            cursor: pointer;
+        }
+        .next {
+            background: url(../images/chevron-right.png) center no-repeat;
+        }
+    }
+}
