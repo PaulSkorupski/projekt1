@@ -77,3 +77,22 @@
         }
     }
 }
+
+@media screen and (max-width: 1024px) {
+    .about-content-grid {
+        flex-flow: column nowrap !important;
+    }
+    .about-content-cont,
+    .fix,
+    .top {
+        margin: 0 !important;
+        text-align: center;
+    }
+    .fix {
+        margin-top: 100px !important;
+    }
+    .font-sect-1,
+    .font-sect-2 {
+        max-width: unset !important;
+    }
+}

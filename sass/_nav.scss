@@ -54,6 +54,9 @@
 @media screen and (max-width: 1024px) {
     .nav {
         font-size: 0.8rem !important;
+        .divider {
+            display: none;
+        }
     }
     .opt-theme-ico {
         width: 15px !important;

@@ -171,6 +171,12 @@
     margin-top: 30px;
 }
 
+@media screen and (max-width: 1024px) {
+    .wrapper-shortcuts-cont {
+        display: none !important;
+    }
+}
+
 .wrapper-shortcuts-align {
     display: flex;
     flex-wrap: nowrap;

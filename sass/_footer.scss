@@ -76,3 +76,25 @@
         margin: 0 10px;
     }
 }
+
+@media screen and (max-width: 1024px) {
+    .footer-links-cont {
+        margin-top: 25px;
+    }
+    .footer-align {
+        flex-flow: column nowrap;
+    }
+    .footer-copyright {
+        flex-flow: column nowrap;
+    }
+    .footer-copyright-cont {
+        margin: 10px 0;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .footer-img {
+        width: 100%;
+        height: auto;
+    }
+}

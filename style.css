@@ -503,6 +503,9 @@ textarea {
   .nav {
     font-size: 0.8rem !important;
   }
+  .nav .divider {
+    display: none;
+  }
 
   .opt-theme-ico {
     width: 15px !important;
@@ -690,6 +693,11 @@ textarea {
   margin-top: 30px;
 }
 
+@media screen and (max-width: 1024px) {
+  .wrapper-shortcuts-cont {
+    display: none !important;
+  }
+}
 .wrapper-shortcuts-align {
   display: flex;
   flex-wrap: nowrap;
@@ -792,6 +800,54 @@ textarea {
 .wrapper-controls-align .controls-cont .dot-active {
   background-color: #ffffff;
   border: 2px solid #e6488b;
+}
+
+.wrapper-shortcuts-dropdown-cont {
+  display: none;
+  text-align: center;
+  margin-top: 40px;
+}
+
+@media screen and (max-width: 1024px) {
+  .wrapper-shortcuts-dropdown-cont {
+    display: block;
+  }
+}
+.dropdown-align {
+  width: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.dropdown-anchor {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.15rem;
+  color: #33506b;
+  margin-bottom: 10px;
+}
+.dropdown-anchor::after {
+  content: "";
+  display: inline-block;
+  background: url(../images/chevron-down--inactive.png) center no-repeat;
+  width: 10px;
+  height: 10px;
+  transform: translate(8px, -1px);
+}
+
+.dropdown-content-cont {
+  display: none;
+  flex-flow: column nowrap;
+  background-color: #e3e6ee;
+}
+.dropdown-content-cont .dropdown-item {
+  flex: 1;
+  padding: 10px 0;
+  font-family: "Roboto", sans-serif;
+  color: #6c799a;
+}
+.dropdown-content-cont .dropdown-item:hover {
+  background-color: #e6488b;
+  color: #ffffff;
 }
 
 .offers {
@@ -944,6 +1000,27 @@ textarea {
   transform: translate(85%, 10%);
 }
 
+@media screen and (max-width: 1024px) {
+  .about-content-grid {
+    flex-flow: column nowrap !important;
+  }
+
+  .about-content-cont,
+.fix,
+.top {
+    margin: 0 !important;
+    text-align: center;
+  }
+
+  .fix {
+    margin-top: 100px !important;
+  }
+
+  .font-sect-1,
+.font-sect-2 {
+    max-width: unset !important;
+  }
+}
 .news {
   background-color: #eef0f5;
   padding: 130px 0;
@@ -1143,6 +1220,24 @@ textarea {
   justify-content: center;
 }
 
+@media screen and (max-width: 1024px) {
+  .contact-content {
+    flex-flow: column nowrap !important;
+  }
+
+  .contact-item {
+    margin: 15px 0 !important;
+  }
+
+  .contact-form-cont {
+    width: 100% !important;
+    order: -1;
+  }
+
+  .contact-button-cont {
+    justify-content: center !important;
+  }
+}
 .newsletter {
   background-color: #e3e6ee;
   padding: 130px 0;
@@ -1227,6 +1322,26 @@ textarea {
   margin-top: 30px;
 }
 
+@media screen and (max-width: 1024px) {
+  .newsletter-content {
+    flex-flow: column nowrap !important;
+    width: 80%;
+    margin: auto;
+  }
+
+  .newsletter-info-cont {
+    width: 100%;
+  }
+
+  .newsletter-confirm-cont {
+    width: 80%;
+    margin: 20px auto !important;
+  }
+
+  .newsletter-item {
+    margin: 20px;
+  }
+}
 .footer-links {
   background-color: #ffffff;
   padding: 45px 0;
@@ -1306,6 +1421,29 @@ textarea {
   margin: 0 10px;
 }
 
+@media screen and (max-width: 1024px) {
+  .footer-links-cont {
+    margin-top: 25px;
+  }
+
+  .footer-align {
+    flex-flow: column nowrap;
+  }
+
+  .footer-copyright {
+    flex-flow: column nowrap;
+  }
+
+  .footer-copyright-cont {
+    margin: 10px 0;
+  }
+}
+@media screen and (max-width: 768px) {
+  .footer-img {
+    width: 100%;
+    height: auto;
+  }
+}
 * {
   box-sizing: border-box;
 }

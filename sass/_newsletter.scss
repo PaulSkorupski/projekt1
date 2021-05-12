@@ -86,3 +86,21 @@
         margin-top: 30px;
     }
 }
+
+@media screen and (max-width: 1024px) {
+    .newsletter-content {
+        flex-flow: column nowrap !important;
+        width: 80%;
+        margin: auto;
+    }
+    .newsletter-info-cont {
+        width: 100%;
+    }
+    .newsletter-confirm-cont {
+        width: 80%;
+        margin: 20px auto !important;
+    }
+    .newsletter-item {
+        margin: 20px;
+    }
+}

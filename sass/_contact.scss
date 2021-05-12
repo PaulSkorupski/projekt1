@@ -68,3 +68,19 @@
     align-items: center;
     justify-content: center;
 }
+
+@media screen and (max-width: 1024px) {
+    .contact-content {
+        flex-flow: column nowrap !important;
+    }
+    .contact-item {
+        margin: 15px 0 !important;
+    }
+    .contact-form-cont {
+        width: 100% !important;
+        order: -1;
+    }
+    .contact-button-cont {
+        justify-content: center !important;
+    }
+}
