@@ -153,20 +153,6 @@
     }
 }
 
-@media screen and (max-width: 1024px) {
-    .search-box-inp {
-        font-size: 0.8rem !important;
-        padding: 0 10px !important;
-    }
-    .temp-ico {
-        width: 20px !important;
-        height: 20px !important;
-    }
-    .temp-font {
-        font-size: 1rem !important;
-    }
-}
-
 .wrapper-shortcuts-cont {
     margin-top: 30px;
 }
@@ -278,5 +264,14 @@
             background-color: $bg-100;
             border: 2px solid $bg-accent;
         }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .wrapper-info-align {
+        width: 95% !important;
+    }
+    .control-dot {
+        transform: scale(1.5);
     }
 }

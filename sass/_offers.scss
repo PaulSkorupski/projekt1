@@ -76,3 +76,9 @@
         url(../images/tag1-img-l2.png) center no-repeat,
         url(../images/tag1-img-l1.png) center no-repeat;
 }
+
+@media screen and (max-width: 600px) {
+    .offers-banner {
+        display: none !important;
+    }
+}

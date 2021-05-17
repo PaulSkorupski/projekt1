@@ -500,8 +500,8 @@ textarea {
 }
 
 @media screen and (max-width: 1024px) {
-  .nav {
-    font-size: 0.8rem !important;
+  .nav .nav-align {
+    justify-content: center !important;
   }
   .nav .divider {
     display: none;
@@ -513,6 +513,29 @@ textarea {
   }
 
   .opt-font {
+    font-size: 1rem !important;
+  }
+}
+@media screen and (max-width: 600px) {
+  .nav {
+    display: none !important;
+  }
+
+  .temp-cont {
+    display: none !important;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .search-box-inp {
+    padding: 0 10px !important;
+  }
+
+  .temp-ico {
+    width: 20px !important;
+    height: 20px !important;
+  }
+
+  .temp-font {
     font-size: 1rem !important;
   }
 }
@@ -674,21 +697,6 @@ textarea {
   color: #33506b;
 }
 
-@media screen and (max-width: 1024px) {
-  .search-box-inp {
-    font-size: 0.8rem !important;
-    padding: 0 10px !important;
-  }
-
-  .temp-ico {
-    width: 20px !important;
-    height: 20px !important;
-  }
-
-  .temp-font {
-    font-size: 1rem !important;
-  }
-}
 .wrapper-shortcuts-cont {
   margin-top: 30px;
 }
@@ -802,6 +810,15 @@ textarea {
   border: 2px solid #e6488b;
 }
 
+@media screen and (max-width: 600px) {
+  .wrapper-info-align {
+    width: 95% !important;
+  }
+
+  .control-dot {
+    transform: scale(1.5);
+  }
+}
 .wrapper-shortcuts-dropdown-cont {
   display: none;
   text-align: center;
@@ -841,7 +858,7 @@ textarea {
 }
 .dropdown-content-cont .dropdown-item {
   flex: 1;
-  padding: 10px 0;
+  padding: 15px 0;
   font-family: "Roboto", sans-serif;
   color: #6c799a;
 }
@@ -922,6 +939,11 @@ textarea {
   background: url(../images/tag1.png) center no-repeat, url(../images/tag1-img-l3.png) center no-repeat, url(../images/tag1-img-l2.png) center no-repeat, url(../images/tag1-img-l1.png) center no-repeat;
 }
 
+@media screen and (max-width: 600px) {
+  .offers-banner {
+    display: none !important;
+  }
+}
 .about {
   padding-bottom: 130px;
 }
@@ -1093,6 +1115,33 @@ textarea {
   background: url(../images/chevron-right.png) center no-repeat;
 }
 
+@media screen and (max-width: 612px) {
+  .news-cont {
+    flex-flow: column nowrap !important;
+  }
+
+  .news-date-cont {
+    align-items: center !important;
+  }
+
+  .news-divider {
+    height: 2px !important;
+    width: 100% !important;
+    margin: 40px 0 !important;
+  }
+
+  .news-controls {
+    justify-content: center;
+  }
+  .news-controls .control-item {
+    padding: 20px !important;
+    background-size: unset !important;
+  }
+  .news-controls .next {
+    margin-right: 0 !important;
+    margin-left: 40px;
+  }
+}
 .gallery {
   background-color: #ffffff;
   padding: 130px 0;

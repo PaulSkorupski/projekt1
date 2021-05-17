@@ -72,3 +72,28 @@
         }
     }
 }
+
+@media screen and (max-width: 612px) {
+    .news-cont {
+        flex-flow: column nowrap !important;
+    }
+    .news-date-cont {
+        align-items: center !important;
+    }
+    .news-divider {
+        height: 2px !important;
+        width: 100% !important;
+        margin: 40px 0 !important;
+    }
+    .news-controls {
+        justify-content: center;
+        .control-item {
+            padding: 20px !important;
+            background-size: unset !important;
+        }
+        .next {
+            margin-right: 0 !important;
+            margin-left: 40px;
+        }
+    }
+}

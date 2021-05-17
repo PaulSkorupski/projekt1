@@ -53,7 +53,9 @@
 
 @media screen and (max-width: 1024px) {
     .nav {
-        font-size: 0.8rem !important;
+        .nav-align {
+            justify-content: center !important;
+        }
         .divider {
             display: none;
         }
@@ -63,6 +65,28 @@
         height: 15px !important;
     }
     .opt-font {
+        font-size: 1rem !important;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .nav {
+        display: none !important;
+    }
+    .temp-cont {
+        display: none !important;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .search-box-inp {
+        padding: 0 10px !important;
+    }
+    .temp-ico {
+        width: 20px !important;
+        height: 20px !important;
+    }
+    .temp-font {
         font-size: 1rem !important;
     }
 }
