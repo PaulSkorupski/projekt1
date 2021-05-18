@@ -1,0 +1,15 @@
+*section > h1, h2
+*img zamiast bg-image tam gdzie ma to sens (lazy loading jako optymalizacja)
+*telefon i mail - owiń linkami
+*menu główne - semantyki (ul > li) / nav
+*SEMANTYKI
+*checkbox jako custom checkbox //idfk jak ale będzie
+*przyciski jako jeden kontener (zamiast ::after)
+*koordynaty w footerze - link do gmaps
+*galeria jako linki & hover
+*burger w rogu (fixed?) / przenieś szary pasek do środka
+*search w burgerze
+
+
+*skokowe zmiany czcionek (ostatnia 2x(+.25 co krok?))
+*kontrast (poszukaj kolorów z innych stron)

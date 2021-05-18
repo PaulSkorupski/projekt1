@@ -68,6 +68,14 @@
     justify-content: center;
     font-family: $ff-main;
     color: $clr-200;
+    .copyright-font a {
+        text-decoration: none;
+        color: unset;
+        transition: color 150ms ease;
+        &:hover {
+            color: #06090c;
+        }
+    }
     .dark {
         font-size: 1.2rem;
         color: $clr-300;

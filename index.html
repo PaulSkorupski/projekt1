@@ -4,20 +4,22 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Document</title>
+        <meta name="keywords" content="leczenie, rehabilitacja, wypoczynek, turnusy 7 i 14 dniowe, Ciechocinek, sanatorium, uzdrowisko, 50+, senior, cennik, ">
+	    <meta name="description" content="Sanatorium Uzdrowiskowe “Chemik” – miejsce rehabilitacji, leczenia i wypoczynku. Kuracje na bazie naturalnych surowców leczniczych: solanki i borowiny.">
+    	<title>Ciechocinek Uzdrowisko – Sanatorium Uzdrowiskowe Chemik –  rehabilitacja, leczenie, wypoczynek - Sanatorium Chemik</title>
         <link rel="stylesheet" href="style.css" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" />
         <link
         href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap"
         rel="stylesheet"
         />
         <script defer src="./js/dropdown.js"></script>
+        <script defer src="./js/slider.js"></script>
     </head>
     <body>
         <div class="container">
-            <section class="nav">
+            <nav class="nav">
                 <div class="nav-align">
-                    <div class="nav-cell color">REZERWACJA</div>
+                    <div class="nav-cell">REZERWACJA</div>
                     <div class="nav-cell nav-border">CENNIK</div>
                     <div class="nav-cell nav-border">OGŁOSZENIA</div>
                     <div class="nav-cell nav-border">KONTAKT</div>
@@ -27,7 +29,7 @@
                     </div>
                     <div class="nav-cell opt-font nav-border"><span class="font-dec">&#8212;</span> A <span class="font-inc">+</span></div>
                 </div>
-            </section>
+            </nav>
             <section class="wrapper">
                 <div class="wrapper-info-cont">
                     <div class="wrapper-info-align">
@@ -36,13 +38,13 @@
                                 <div class="info-table-top">
                                     <div class="info-table-numbers">
                                         <p class="info-table-font">
-                                            54 283 52 43
+                                            <a href="#">54 283 52 43</a>
                                         </p>
                                         <p class="info-table-font">
-                                            54 283 68 27
+                                            <a href="#">54 283 68 27</a>
                                         </p>
                                         <p class="info-table-font">
-                                            54 283 32 27
+                                            <a href="#">54 283 32 27</a>
                                         </p>
                                     </div>
                                     <div class="info-table-divider"></div>
@@ -55,13 +57,13 @@
                                 </div>
                                 <div class="info-table-bottom">
                                     <p class="info-table-bottom-font">
-                                        recepcja@sanatoriumchemik.pl
+                                        <a href="#">recepcja@sanatoriumchemik.pl</a>
                                     </p>
                                 </div>
                             </div>
                         </div>
                         <div class="wrapper-info wrapper-info-logo">
-                            <div class="logo"></div>
+                            <img src="./images/logo.png" alt="logo" class="logo">
                         </div>
                         <div class="wrapper-info wrapper-info-meta">
                             <div class="wrapper-info-meta-align">
@@ -81,7 +83,10 @@
                 <div class="wrapper-shortcuts-cont">
                     <div class="wrapper-shortcuts-align">
                         <div class="wrapper-shortcut wrapper-menu">
-                            <p>NADZCHODZĄCE OFERTY</p>
+                            <div class="wrapper-shortcut-cont">
+                                <img class="wrapper-shortcut-icon" src="./images/chevron-down--inactive.png" />
+                                <p>NADZCHODZĄCE OFERTY</p>
+                            </div>
                             <div class="wrapper-submenu">
                                 <div class="submenu-item">item</div>
                                 <div class="submenu-item">item2</div>
@@ -89,7 +94,10 @@
                             </div>
                         </div>
                         <div class="wrapper-shortcut wrapper-menu">
-                            <p>TURNUSY I POBYTY LECZNICZE</p>
+                            <div class="wrapper-shortcut-cont">
+                                <img class="wrapper-shortcut-icon" src="./images/chevron-down--inactive.png" />
+                                <p>TURNUSY I POBYTY LECZNICZE</p>
+                            </div>
                             <div class="wrapper-submenu">
                                     <div class="submenu-item">item</div>
                                     <div class="submenu-item">item2</div>
@@ -97,7 +105,10 @@
                             </div>
                         </div>
                         <div class="wrapper-shortcut wrapper-menu">
-                            <p>OFERTY SPECJALNE</p>
+                            <div class="wrapper-shortcut-cont">
+                                <img class="wrapper-shortcut-icon" src="./images/chevron-down--inactive.png" />
+                                <p>OFERTY SPECJALNE</p>
+                            </div>
                             <div class="wrapper-submenu">
                                     <div class="submenu-item">item</div>
                                     <div class="submenu-item">item2</div>
@@ -126,14 +137,17 @@
                     </div>
                 </div>
                 <!--  -->
-                <div class="wrapper-image"></div>
+                <div id="wrapper0" class="wrapper-image image-active"></div>
+                <div id="wrapper1" class="wrapper-image"></div>
+                <div id="wrapper2" class="wrapper-image"></div>
+                <div id="wrapper3" class="wrapper-image"></div>
                 <div class="wrapper-controls-cont">
                     <div class="wrapper-controls-align">
                         <div class="controls-cont">
-                            <div class="control-dot dot-active"></div>
-                            <div class="control-dot"></div>
-                            <div class="control-dot"></div>
-                            <div class="control-dot"></div>
+                            <div id="0" class="control-dot dot-active"></div>
+                            <div id="1" class="control-dot"></div>
+                            <div id="2" class="control-dot"></div>
+                            <div id="3" class="control-dot"></div>
                         </div>
                     </div>
                 </div>
@@ -421,13 +435,15 @@
             </section>
             <section class="footer-copyright">
                 <div class="footer-copyright-cont">
-                    <p class="copyright-font">© 2021 Sanatorium Uzdrowiskowe “Chemik”</p>
+                    <p class="copyright-font"><a href="#">© 2021 Sanatorium Uzdrowiskowe “Chemik”</a></p>
                 </div>
                 <div class="footer-copyright-cont">
-                    <p class="copyright-font dark">Polityka prywatności <span class="footer-pipe">|</span> RODO</p>
+                    <p class="copyright-font dark">Polityka prywatności <span class="footer-pipe">|</span><a href="#"> RODO</a></p>
                 </div>
                 <div class="footer-copyright-cont">
-                    <p class="copyright-font">Wykonanie JW WebDev</p>
+                    <p class="copyright-font">
+                        <a href="#">Wykonanie JW WebDev</a>
+                    </p>
                 </div>
             </section>
         </div>

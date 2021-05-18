@@ -469,8 +469,9 @@ textarea {
   align-items: center;
   justify-content: center;
   cursor: pointer;
+  transition: background-color 150ms ease, color 150ms ease;
 }
-.nav .color {
+.nav .nav-cell:hover:not(.divider) {
   background-color: #e6488b;
   color: #ffffff;
 }
@@ -610,7 +611,16 @@ textarea {
   font-weight: 500;
 }
 .info-table .info-table-top .info-table-numbers .info-table-font {
-  margin: 5px 0;
+  padding: 5px 0;
+  transition: background-color 150ms ease;
+}
+.info-table .info-table-top .info-table-numbers .info-table-font a {
+  text-decoration: none;
+  color: unset;
+  border-radius: 3px;
+}
+.info-table .info-table-top .info-table-numbers .info-table-font:hover {
+  background-color: #eef0f5;
 }
 .info-table .info-table-top .info-table-divider {
   width: 2px;
@@ -626,6 +636,16 @@ textarea {
 .info-table .info-table-bottom {
   margin-top: 8px;
   color: #e6488b;
+  transition: background-color 150ms ease;
+}
+.info-table .info-table-bottom a {
+  text-decoration: none;
+  color: unset;
+  padding: 5px 0;
+  border-radius: 3px;
+}
+.info-table .info-table-bottom a:hover {
+  background-color: #eef0f5;
 }
 
 @media screen and (max-width: 1400px) {
@@ -639,11 +659,8 @@ textarea {
 }
 .wrapper-info-logo {
   height: 100%;
-}
-.wrapper-info-logo .logo {
-  background: url(../images/logo.png) center no-repeat;
-  height: 100%;
-  background-size: contain;
+  display: flex;
+  justify-content: center;
 }
 
 .wrapper-info-meta {
@@ -721,22 +738,23 @@ textarea {
   color: #33506b;
   margin: 0 30px;
   cursor: pointer;
+  display: flex;
+  flex-flow: column nowrap;
   position: relative;
+}
+.wrapper-shortcuts-align .wrapper-shortcut .wrapper-shortcut-cont {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: center;
+}
+.wrapper-shortcuts-align .wrapper-shortcut .wrapper-shortcut-cont .wrapper-shortcut-icon {
+  margin-right: 10px;
 }
 @media screen and (max-width: 1100px) {
   .wrapper-shortcuts-align .wrapper-shortcut {
     font-size: calc((12px + 1vw) / 2);
   }
-}
-.wrapper-shortcuts-align .wrapper-menu::before {
-  content: "";
-  position: absolute;
-  display: inline-block;
-  background: url(../images/chevron-down--inactive.png) center no-repeat;
-  background-size: contain;
-  width: 9px;
-  height: 9px;
-  transform: translate(-200%, 33%);
 }
 .wrapper-shortcuts-align .wrapper-menu {
   z-index: 9;
@@ -745,16 +763,17 @@ textarea {
   display: flex;
 }
 .wrapper-shortcuts-align .wrapper-submenu {
-  top: -60%;
-  left: 50%;
-  display: none;
   position: absolute;
-  width: 130%;
+  display: none;
   background-color: #eef0f5;
   z-index: -1;
-  transform: translateX(-50%);
   flex-flow: column nowrap;
-  padding-top: 45px;
+  width: 120%;
+  transform: translate(-50%, -5%);
+  left: 50%;
+  padding-top: 40px;
+  box-shadow: 0 0 10px #0000003b;
+  border-radius: 3px;
 }
 .wrapper-shortcuts-align .wrapper-submenu .submenu-item {
   transition: all 100ms ease;
@@ -771,10 +790,34 @@ textarea {
 
 .wrapper-image {
   height: 577px;
-  width: 100%;
-  background: url(../images/wrapper-img.png) center no-repeat;
-  background-size: cover;
   margin-top: 20px;
+  display: none;
+  width: 0%;
+}
+
+.image-active {
+  width: 100%;
+  display: block;
+  animation-name: slider-in;
+  animation-duration: 1000ms;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+}
+
+#wrapper0 {
+  background: url(./images/wrapper-img-1.png) center/cover no-repeat;
+}
+
+#wrapper1 {
+  background: url(./images/wrapper-img-2.jpg) center/cover no-repeat;
+}
+
+#wrapper2 {
+  background: url(./images/wrapper-img-3.jpg) center/cover no-repeat;
+}
+
+#wrapper3 {
+  background: url(./images/wrapper-img-4.jpg) center/cover no-repeat;
 }
 
 .wrapper-controls-cont {
@@ -803,7 +846,9 @@ textarea {
   border-radius: 50%;
   margin: 0 20px;
   background-color: #93a2b1;
+  border: 2px solid #93a2b1;
   cursor: pointer;
+  transition: all 500ms ease;
 }
 .wrapper-controls-align .controls-cont .dot-active {
   background-color: #ffffff;
@@ -817,6 +862,17 @@ textarea {
 
   .control-dot {
     transform: scale(1.5);
+  }
+}
+@keyframes slider-in {
+  from {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.6;
+  }
+  to {
+    opacity: 1;
   }
 }
 .wrapper-shortcuts-dropdown-cont {
@@ -1461,6 +1517,14 @@ textarea {
   justify-content: center;
   font-family: "Roboto", sans-serif;
   color: #6c799a;
+}
+.footer-copyright-cont .copyright-font a {
+  text-decoration: none;
+  color: unset;
+  transition: color 150ms ease;
+}
+.footer-copyright-cont .copyright-font a:hover {
+  color: #06090c;
 }
 .footer-copyright-cont .dark {
   font-size: 1.2rem;

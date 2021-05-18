@@ -21,10 +21,11 @@
         align-items: center;
         justify-content: center;
         cursor: pointer;
-    }
-    .color {
-        background-color: $bg-accent;
-        color: $clr-100;
+        transition: background-color 150ms ease, color 150ms ease;
+        &:hover:not(.divider) {
+            background-color: $bg-accent;
+            color: $clr-100;
+        }
     }
     .nav-border {
         border-right: 1.5px solid $bg-100;
