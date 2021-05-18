@@ -23,6 +23,7 @@
             flex-flow: column nowrap;
             color: $clr-300;
             cursor: pointer;
+            transition: all 300ms ease;
             &:hover {
                 background-color: $bg-accent;
                 color: $clr-100;

@@ -948,6 +948,7 @@ textarea {
   flex-flow: column nowrap;
   color: #33506b;
   cursor: pointer;
+  transition: all 300ms ease;
 }
 .offers-tiles-cont .offers-grid .offer:hover {
   background-color: #e6488b;
@@ -1222,10 +1223,18 @@ textarea {
   justify-content: center;
   flex-flow: row wrap;
 }
+.gallery-content a {
+  text-decoration: none;
+  color: unset;
+}
 
 .gallery-item {
   width: 285px;
   margin: 50px 20px;
+  transition: background-color 300ms ease;
+}
+.gallery-item:hover {
+  background-color: #e3e6ee;
 }
 .gallery-item .gallery-thumbnail {
   background-size: contain;
@@ -1246,7 +1255,7 @@ textarea {
   background-image: url(../images/bg12.png);
 }
 .gallery-item .gallery-title-cont {
-  margin-top: 20px;
+  padding: 20px 0;
   font-family: "Roboto", sans-serif;
   font-size: 1.05rem;
   color: #33506b;
