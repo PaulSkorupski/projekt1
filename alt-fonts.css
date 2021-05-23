@@ -1,0 +1,19 @@
+/* The purpose of this file is to be used in other files as a source for the font-size variables, you can overwrite it with a javascript script to change the size dynamically */
+
+:root {
+    --fs-100: 0.85rem;
+    --fs-200: 0.9rem;
+    --fs-300: 1rem;
+    --fs-400: 1.05rem;
+    --fs-500: 1.15rem;
+    --fs-600: 1.2rem;
+    --fs-700: 1.25rem;
+    --fs-800: 1.3rem;
+    --fs-900: 1.35rem;
+    --fs-1000: 1.75rem;
+    --fs-1100: 2rem;
+    --fs-dynamic-1: calc((12px + 1vw) / 2);
+    --fs-dynamic-2: calc((14px + 1vw) / 2);
+    --fs-dynamic-3: calc((16px + 1vw) / 2);
+    --fs-dynamic-4: calc((17px + 1vw) / 2);
+}

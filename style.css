@@ -1578,6 +1578,7 @@ textarea {
 }
 * {
   box-sizing: border-box;
+  font-size: var(--fs-100);
 }
 
 a {
