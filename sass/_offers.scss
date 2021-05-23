@@ -15,7 +15,6 @@
         flex-flow: row wrap;
         justify-content: center;
         .offer {
-            width: 380px;
             height: 320px;
             margin: 16px;
             background-color: $bg-300;
@@ -30,31 +29,8 @@
             }
             .offer-thumbnail {
                 width: 100%;
-                height: 214px;
-                background-size: cover;
-                background-position: center;
-                background-repeat: no-repeat;
+                height: auto;
             }
-            //thumbnails
-            .of1 {
-                background-image: url(../images/bg1.png);
-            }
-            .of2 {
-                background-image: url(../images/bg2.png);
-            }
-            .of3 {
-                background-image: url(../images/bg3.png);
-            }
-            .of4 {
-                background-image: url(../images/bg4.png);
-            }
-            .of5 {
-                background-image: url(../images/bg5.png);
-            }
-            .of6 {
-                background-image: url(../images/bg6.png);
-            }
-            //end of thumbnails
             .offer-title {
                 display: flex;
                 justify-content: center;
@@ -69,13 +45,8 @@
 
 .offers-banner {
     width: 85%;
-    height: 197px;
     margin: auto;
     margin-top: 16px;
-    background: url(../images/tag1.png) center no-repeat,
-        url(../images/tag1-img-l3.png) center no-repeat,
-        url(../images/tag1-img-l2.png) center no-repeat,
-        url(../images/tag1-img-l1.png) center no-repeat;
 }
 
 @media screen and (max-width: 600px) {

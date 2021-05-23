@@ -2,8 +2,8 @@
 @import './sass/globals';
 
 @import './sass/nav';
+@import './sass/burger';
 @import './sass/wrapper';
-@import './sass/dropdown';
 @import './sass/offers';
 @import './sass/about';
 @import './sass/news';
@@ -14,6 +14,11 @@
 
 * {
     box-sizing: border-box;
+}
+
+a {
+    color: unset;
+    text-decoration: none;
 }
 
 .chat {
@@ -86,21 +91,13 @@
     }
 }
 
-.btn {
-    all: unset;
-    margin-top: 15px;
-    font-family: $ff-main;
+.btn-big {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
     color: $clr-accent;
-    cursor: pointer;
-    &::after {
-        content: '';
-        display: inline-block;
-        background: url(../images/chevron-right.png) center no-repeat;
-        background-size: contain;
-        width: 20px;
-        height: 20px;
-        position: absolute;
-        transform: translate(60%, 10%);
+    .btn-arrow {
+        margin-left: 15px;
     }
 }
 
@@ -111,10 +108,10 @@ textarea {
     margin-bottom: 15px;
     font-family: $ff-main;
     font-size: 1rem;
-    color: $clr-300;
+    color: #192734;
     padding: 10px 20px;
     width: 70%;
     &::placeholder {
-        color: $clr-200;
+        color: $clr-300;
     }
 }

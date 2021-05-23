@@ -50,24 +50,11 @@
 
 .newsletter-confirm-checkbox-cont {
     flex: 0.1;
-    .checkbox-background {
-        width: 30px;
-        height: 30px;
+    .newsletter-checkbox {
+        all: revert;
+        width: 27px;
+        height: 27px;
         margin: auto;
-        background-color: $clr-100;
-        cursor: pointer;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        .checkbox {
-            background: url(../images/ico-tick.png) center no-repeat;
-            width: 20px;
-            height: 20px;
-
-            // CHANGE TO NONE TO REMOVE THE TICK
-            display: block;
-            //
-        }
     }
 }
 

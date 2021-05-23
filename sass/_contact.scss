@@ -27,14 +27,19 @@
 
 .contact-info-cont {
     .info-logo {
-        background: url(../images/logo-footer.png) center no-repeat;
-        width: 269px;
-        height: 100px;
         margin-bottom: 30px;
     }
     .info-font {
         margin: 20px 0;
         max-width: 260px;
+        a {
+            transition: background-color 150ms ease;
+            color: unset;
+            text-decoration: none;
+            &:hover {
+                background-color: $bg-400;
+            }
+        }
         span {
             font-weight: 500;
         }
@@ -82,5 +87,8 @@
     }
     .contact-button-cont {
         justify-content: center !important;
+    }
+    iframe {
+        width: 95% !important;
     }
 }

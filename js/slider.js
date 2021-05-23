@@ -3,6 +3,7 @@ var imgs = document.querySelectorAll('.wrapper-image');
 var dots = document.querySelectorAll('.control-dot');
 var isControling = false;
 var intervalIdx = 0;
+var ticks = 0;
 var setActive = function (index) {
     //dots
     dots.forEach(function (dot) {
@@ -26,6 +27,7 @@ dots.forEach(function (dot) {
 imgs.forEach(function (img) {
     img.addEventListener('mouseenter', function () {
         isControling = true;
+        ticks = 0;
     });
 });
 imgs.forEach(function (img) {
@@ -36,6 +38,7 @@ imgs.forEach(function (img) {
 dots.forEach(function (dot) {
     dot.addEventListener('mouseenter', function () {
         isControling = true;
+        ticks = 0;
     });
 });
 dots.forEach(function (dot) {
@@ -45,14 +48,17 @@ dots.forEach(function (dot) {
 });
 setInterval(function () {
     if (!isControling) {
+        ticks++;
         //prevent overflow
-        if (intervalIdx === 3) {
-            intervalIdx = 0;
-            console.log('test');
+        if (ticks === 4) {
+            if (intervalIdx === 3) {
+                intervalIdx = 0;
+            }
+            else {
+                intervalIdx++;
+            }
+            setActive(intervalIdx);
+            ticks = 0;
         }
-        else {
-            intervalIdx++;
-        }
-        setActive(intervalIdx);
     }
-}, 5000);
+}, 1000);

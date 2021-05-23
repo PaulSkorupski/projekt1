@@ -30,31 +30,15 @@
 }
 
 .gallery-item {
-    width: 285px;
     margin: 50px 20px;
     transition: background-color 300ms ease;
     &:hover {
         background-color: $bg-400;
     }
     .gallery-thumbnail {
-        background-size: contain;
-        background-repeat: no-repeat;
-        background-position: center;
-        height: 349px;
+        width: 100%;
+        height: auto;
     }
-    .thumb1 {
-        background-image: url(../images/bg9.png);
-    }
-    .thumb2 {
-        background-image: url(../images/bg10.png);
-    }
-    .thumb3 {
-        background-image: url(../images/bg11.png);
-    }
-    .thumb4 {
-        background-image: url(../images/bg12.png);
-    }
-
     .gallery-title-cont {
         padding: 20px 0;
         font-family: $ff-main;

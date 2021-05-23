@@ -1,0 +1,103 @@
+.burger-btn {
+    display: none;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    position: fixed;
+    right: 20px;
+    top: 20px;
+    z-index: 9999;
+    svg {
+        width: 100%;
+        height: 100%;
+        path {
+            transition: all 200ms linear;
+        }
+    }
+}
+
+.svg-p1.burger-active {
+    transform: rotate(45deg) translate(40px, -180px);
+}
+
+.svg-p2.burger-active {
+    transform: translateX(-100%);
+}
+
+.svg-p3.burger-active {
+    transform: rotate(-45deg) translate(-145px, -20px);
+}
+
+.burger-cont {
+    display: none;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: $bg-300;
+    z-index: 999;
+    overflow-y: scroll;
+    color: $clr-300;
+    font-family: $ff-main;
+    font-size: 1.25rem;
+    text-align: center;
+    box-shadow: 0 0 20px #0000002e;
+    .divider {
+        margin: 10px auto;
+        height: 2px;
+        width: 90%;
+        background-color: $bg-100;
+    }
+}
+
+.burger-context-cont {
+    padding: 40px 0;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    .search-box-cont {
+        width: 90%;
+        margin: 20px 0;
+        margin-top: 40px;
+    }
+    input {
+        padding: 10px 20px !important;
+        text-align: left;
+        width: 90%;
+    }
+}
+
+.burger-custom {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    .burger-item {
+        flex: 1;
+        display: flex !important;
+        justify-content: center;
+        margin: 0 !important;
+        transform: scale(1.15);
+    }
+}
+
+.burger-links {
+    display: flex;
+    flex-flow: column nowrap;
+    .burger-link {
+        padding: 20px 0;
+        transition: all 150ms ease;
+        &:hover {
+            background-color: $bg-accent;
+            color: $clr-100;
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .burger-btn {
+        display: block !important;
+    }
+}

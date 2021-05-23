@@ -5,6 +5,7 @@ const dots: NodeListOf<HTMLDivElement> =
 
 let isControling = false;
 let intervalIdx = 0;
+let ticks = 0;
 
 const setActive = (index: number) => {
     //dots
@@ -31,6 +32,7 @@ dots.forEach((dot) => {
 imgs.forEach((img) => {
     img.addEventListener('mouseenter', () => {
         isControling = true;
+        ticks = 0;
     });
 });
 
@@ -43,6 +45,7 @@ imgs.forEach((img) => {
 dots.forEach((dot) => {
     dot.addEventListener('mouseenter', () => {
         isControling = true;
+        ticks = 0;
     });
 });
 
@@ -54,13 +57,16 @@ dots.forEach((dot) => {
 
 setInterval(() => {
     if (!isControling) {
+        ticks++;
         //prevent overflow
-        if (intervalIdx === 3) {
-            intervalIdx = 0;
-            console.log('test');
-        } else {
-            intervalIdx++;
+        if (ticks === 4) {
+            if (intervalIdx === 3) {
+                intervalIdx = 0;
+            } else {
+                intervalIdx++;
+            }
+            setActive(intervalIdx);
+            ticks = 0;
         }
-        setActive(intervalIdx);
     }
-}, 5000);
+}, 1000);

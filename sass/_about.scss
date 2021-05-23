@@ -38,18 +38,14 @@
         }
     }
     .img-top {
-        background: url(../images/bg8.png) center no-repeat;
-        background-size: contain;
-        height: 349px;
         margin-top: 60px;
+        width: 100%;
     }
 }
 
 .about-content-cont {
     .img-bottom {
-        background: url(../images/bg7.png) center no-repeat;
-        background-size: contain;
-        height: 349px;
+        width: 100%;
     }
     .font-sect-1 {
         margin-top: 50px;
@@ -59,22 +55,6 @@
     .font-sect-2 {
         max-width: 600px;
         margin-bottom: 30px;
-    }
-    .about-more a {
-        all: unset;
-        color: $clr-accent;
-        cursor: pointer;
-        font-family: $ff-main;
-        &::after {
-            content: '';
-            display: inline-block;
-            background: url(../images/chevron-right.png) center no-repeat;
-            background-size: contain;
-            width: 20px;
-            height: 20px;
-            position: absolute;
-            transform: translate(85%, 10%);
-        }
     }
 }
 
@@ -90,6 +70,9 @@
     }
     .fix {
         margin-top: 100px !important;
+    }
+    .about-more {
+        justify-content: center;
     }
     .font-sect-1,
     .font-sect-2 {

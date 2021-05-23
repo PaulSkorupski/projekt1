@@ -34,22 +34,23 @@
         flex: 1;
         cursor: default;
     }
-    .opt-theme,
-    .opt-font {
-        font-weight: 600;
-        font-size: 1.15rem;
-        cursor: pointer;
-        user-select: none;
-        span {
-            margin: 0 10px;
-        }
+}
+
+.opt-theme,
+.opt-font {
+    font-weight: 600;
+    font-size: 1.15rem;
+    cursor: pointer;
+    user-select: none;
+    span {
+        margin: 0 10px;
     }
-    .opt-theme-ico {
-        background: url(../images/ico-theme.png) center;
-        background-size: cover;
-        width: 20px;
-        height: 20px;
-    }
+}
+.opt-theme-ico {
+    background: url(../images/ico-theme.png) center;
+    background-size: cover;
+    width: 20px;
+    height: 20px;
 }
 
 @media screen and (max-width: 1024px) {
