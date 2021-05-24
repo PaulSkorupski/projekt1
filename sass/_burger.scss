@@ -39,7 +39,7 @@
     overflow-y: scroll;
     color: $clr-300;
     font-family: $ff-main;
-    font-size: 1.25rem;
+    font-size: var(--fs-700);
     text-align: center;
     box-shadow: 0 0 20px #0000002e;
     .divider {

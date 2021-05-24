@@ -13,7 +13,7 @@
     .section-tag {
         font-family: $ff-main;
         color: $clr-300;
-        font-size: 1.3rem;
+        font-size: var(--fs-800);
         text-align: center;
     }
 }
@@ -42,12 +42,12 @@
     .gallery-title-cont {
         padding: 20px 0;
         font-family: $ff-main;
-        font-size: 1.05rem;
+        font-size: var(--fs-400);
         color: $clr-300;
         text-align: center;
         .gallery-title-action {
             margin-top: 10px;
-            font-size: 1.35rem;
+            font-size: var(--fs-900);
         }
     }
 }
