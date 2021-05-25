@@ -64,9 +64,10 @@
                     text-decoration: none;
                     color: unset;
                     border-radius: 3px;
+                    transition: color 150ms ease;
                 }
                 &:hover {
-                    background-color: $bg-300;
+                    color: #06090c;
                 }
             }
         }
@@ -85,14 +86,15 @@
     .info-table-bottom {
         margin-top: 8px;
         color: $clr-accent;
-        transition: background-color 150ms ease;
         a {
             text-decoration: none;
             color: unset;
             padding: 5px 0;
             border-radius: 3px;
+            font-size: var(--fs-300);
+            transition: color 150ms ease;
             &:hover {
-                background-color: $bg-300;
+                color: #06090c;
             }
         }
     }
@@ -133,6 +135,7 @@
             padding: 0 15px;
             color: $clr-300;
             font-family: $ff-main;
+            font-size: var(--fs-300);
             &::placeholder {
                 color: $clr-300;
             }

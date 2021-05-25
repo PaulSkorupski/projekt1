@@ -43,7 +43,17 @@
     cursor: pointer;
     user-select: none;
     span {
-        margin: 0 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 30px;
+        height: 30px;
+        margin: 0 6px;
+        border-radius: 50%;
+        transition: background 150ms ease;
+        &:hover {
+            background: #bdbdbd5b;
+        }
     }
 }
 .opt-theme-ico {

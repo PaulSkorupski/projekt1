@@ -68,6 +68,9 @@
     justify-content: center;
     font-family: $ff-main;
     color: $clr-200;
+    .copyright-font {
+        font-size: var(--fs-300);
+    }
     .copyright-font a {
         text-decoration: none;
         color: unset;

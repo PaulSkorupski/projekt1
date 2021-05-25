@@ -32,12 +32,13 @@
     .info-font {
         margin: 20px 0;
         max-width: 260px;
+        font-size: var(--fs-300);
         a {
-            transition: background-color 150ms ease;
             color: unset;
             text-decoration: none;
+            transition: color 150ms ease;
             &:hover {
-                background-color: $bg-400;
+                color: #06090c;
             }
         }
         span {
@@ -63,6 +64,7 @@
             display: flex;
             justify-content: flex-start;
             width: 70%;
+            font-size: var(--fs-300);
         }
     }
 }
