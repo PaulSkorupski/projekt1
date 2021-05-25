@@ -1,8 +1,3 @@
-*menu główne - semantyki (ul > li) / nav
-
-*burger w rogu (fixed?) / przenieś szary pasek do środka
-*search w burgerze
-
-
 *skokowe zmiany czcionek (ostatnia 2x(+.25 co krok?))
+    -spany jako osobne elementy z osobnym efektem hover
 *kontrast (poszukaj kolorów z innych stron)

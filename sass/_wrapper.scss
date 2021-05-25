@@ -2,10 +2,6 @@
     width: 100%;
 }
 
-.wrapper-info-cont {
-    height: 140px;
-}
-
 .wrapper-info-align {
     display: flex;
     flex-wrap: nowrap;
@@ -58,7 +54,7 @@
     .info-table-top {
         display: flex;
         flex-wrap: nowrap;
-        font-size: 1.2rem;
+        font-size: var(--fs-600);
         .info-table-numbers {
             color: $clr-accent;
             font-weight: 500;
@@ -68,9 +64,10 @@
                     text-decoration: none;
                     color: unset;
                     border-radius: 3px;
+                    transition: color 150ms ease;
                 }
                 &:hover {
-                    background-color: $bg-300;
+                    color: #06090c;
                 }
             }
         }
@@ -89,14 +86,15 @@
     .info-table-bottom {
         margin-top: 8px;
         color: $clr-accent;
-        transition: background-color 150ms ease;
         a {
             text-decoration: none;
             color: unset;
             padding: 5px 0;
             border-radius: 3px;
+            font-size: var(--fs-300);
+            transition: color 150ms ease;
             &:hover {
-                background-color: $bg-300;
+                color: #06090c;
             }
         }
     }
@@ -104,10 +102,10 @@
 
 @media screen and (max-width: 1400px) {
     .info-table-top {
-        font-size: calc((16px + 1vw) / 2) !important;
+        font-size: var(--fs-dynamic-3) !important;
     }
     .info-table-bottom {
-        font-size: calc((14px + 1vw) / 2) !important;
+        font-size: var(--fs-dynamic-2) !important;
     }
 }
 
@@ -137,6 +135,7 @@
             padding: 0 15px;
             color: $clr-300;
             font-family: $ff-main;
+            font-size: var(--fs-300);
             &::placeholder {
                 color: $clr-300;
             }
@@ -164,7 +163,7 @@
     .temp-font {
         font-family: $ff-main;
         font-weight: 500;
-        font-size: 1.2rem;
+        font-size: var(--fs-600);
         color: $clr-300;
     }
 }
@@ -188,7 +187,7 @@
     margin: auto;
     .wrapper-shortcut {
         font-family: $ff-main;
-        font-size: calc((17px + 1vw) / 2);
+        font-size: var(--fs-dynamic-4);
         font-weight: 500;
         color: $clr-300;
         margin: 0 30px;
@@ -208,7 +207,7 @@
     }
     @media screen and (max-width: 1100px) {
         .wrapper-shortcut {
-            font-size: calc((12px + 1vw) / 2);
+            font-size: var(--fs-dynamic-1);
         }
     }
     .wrapper-menu {
@@ -226,14 +225,14 @@
         width: 120%;
         transform: translate(-50%, -5%);
         left: 50%;
-        padding-top: 40px;
+        padding-top: calc(var(--fs-100) * 3);
         box-shadow: 0 0 10px #0000003b;
         border-radius: 3px;
         .submenu-item {
             transition: all 100ms ease;
             flex: 1;
             font-family: $ff-main;
-            font-size: 0.85rem;
+            font-size: var(--fs-100);
             color: $clr-300;
             padding: 20px;
             &:hover {

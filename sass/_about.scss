@@ -22,6 +22,7 @@
 
 .about-content-cont {
     font-family: $ff-main;
+    font-size: var(--fs-300);
     color: $clr-300;
     line-height: 1.35;
     flex: 1;
@@ -33,7 +34,7 @@
     .top {
         margin-left: 100px;
         .about-font-heading {
-            font-size: 1.75rem;
+            font-size: var(--fs-1000);
             margin-bottom: 40px;
         }
     }

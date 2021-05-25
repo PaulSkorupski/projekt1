@@ -30,6 +30,7 @@
     .newsletter-info-font {
         max-width: 57%;
         font-weight: 500;
+        font-size: var(--fs-300);
     }
 }
 
@@ -52,8 +53,8 @@
     flex: 0.1;
     .newsletter-checkbox {
         all: revert;
-        width: 27px;
-        height: 27px;
+        width: 35px;
+        height: 35px;
         margin: auto;
     }
 }
@@ -67,7 +68,7 @@
 .newsletter-confirm-cont {
     .newsletter-confirm-font {
         font-weight: 500;
-        font-size: 0.85rem;
+        font-size: var(--fs-100);
     }
     .newsletter-submit {
         margin-top: 30px;
