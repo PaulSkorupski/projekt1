@@ -1,5 +1,6 @@
 .wrapper {
     width: 100%;
+    background: var(--bg-100);
 }
 
 .wrapper-info-align {
@@ -56,7 +57,7 @@
         flex-wrap: nowrap;
         font-size: var(--fs-600);
         .info-table-numbers {
-            color: $clr-accent;
+            color: var(--clr-accent);
             font-weight: 500;
             .info-table-font {
                 padding: 5px 0;
@@ -67,17 +68,17 @@
                     transition: color 150ms ease;
                 }
                 &:hover {
-                    color: #06090c;
+                    color: var(--clr-link);
                 }
             }
         }
         .info-table-divider {
             width: 2px;
-            background-color: $bg-200;
+            background-color: var(--bg-200);
             margin: 0 20px;
         }
         .info-table-tag {
-            color: $clr-300;
+            color: var(--clr-300);
             display: flex;
             flex-flow: column nowrap;
             justify-content: center;
@@ -85,7 +86,7 @@
     }
     .info-table-bottom {
         margin-top: 8px;
-        color: $clr-accent;
+        color: var(--clr-accent);
         a {
             text-decoration: none;
             color: unset;
@@ -94,7 +95,7 @@
             font-size: var(--fs-300);
             transition: color 150ms ease;
             &:hover {
-                color: #06090c;
+                color: var(--clr-link);
             }
         }
     }
@@ -128,16 +129,16 @@
     .search-box-cont {
         height: 50px;
         display: flex;
-        border: 2px solid $bg-200;
+        border: 2px solid var(--bg-200);
         .search-box-inp {
             all: unset;
             flex: 4;
             padding: 0 15px;
-            color: $clr-300;
+            color: var(--clr-input);
             font-family: $ff-main;
             font-size: var(--fs-300);
             &::placeholder {
-                color: $clr-300;
+                color: var(--clr-300);
             }
         }
         .search-box-ico {
@@ -164,7 +165,7 @@
         font-family: $ff-main;
         font-weight: 500;
         font-size: var(--fs-600);
-        color: $clr-300;
+        color: var(--clr-300);
     }
 }
 
@@ -189,7 +190,7 @@
         font-family: $ff-main;
         font-size: var(--fs-dynamic-4);
         font-weight: 500;
-        color: $clr-300;
+        color: var(--clr-300);
         margin: 0 30px;
         cursor: pointer;
         display: flex;
@@ -219,7 +220,7 @@
     .wrapper-submenu {
         position: absolute;
         display: none;
-        background-color: $bg-300;
+        background-color: var(--bg-300);
         z-index: -1;
         flex-flow: column nowrap;
         width: 120%;
@@ -233,11 +234,11 @@
             flex: 1;
             font-family: $ff-main;
             font-size: var(--fs-100);
-            color: $clr-300;
+            color: var(--clr-300);
             padding: 20px;
             &:hover {
-                background-color: $bg-accent;
-                color: $clr-100;
+                background-color: var(--bg-accent);
+                color: var(--clr-100);
             }
         }
     }
@@ -283,7 +284,7 @@
     width: 100%;
     position: relative;
     height: 70px;
-    background-color: $bg-200;
+    background-color: var(--bg-200);
 }
 
 .wrapper-controls-align {
@@ -305,8 +306,8 @@
             transition: all 500ms ease;
         }
         .dot-active {
-            background-color: $bg-100;
-            border: 2px solid $bg-accent;
+            background-color: var(--bg-100);
+            border: 2px solid var(--bg-accent);
         }
     }
 }

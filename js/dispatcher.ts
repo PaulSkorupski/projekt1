@@ -1,17 +1,25 @@
 const head = document.querySelector('head')!;
+const gridBg: HTMLDivElement = document.querySelector('.about-content-grid')!;
 
+//button nodes
 const addBtn: NodeListOf<HTMLSpanElement> =
     document.querySelectorAll('.font-inc')!;
 const subBtn: NodeListOf<HTMLSpanElement> =
     document.querySelectorAll('.font-dec')!;
+const contrastBtn: NodeListOf<HTMLLIElement> =
+    document.querySelectorAll('.opt-theme')!;
 
+//control vars
 let modifier = 1;
+let useHighContrast = false;
 
-function update() {
+//dispatch
+function update(): void {
     const oldSheet = document.querySelector('style');
     const sheet = document.createElement('style');
     sheet.innerHTML = `
         :root {
+            /* fonts */
             --fs-100: ${0.85 * modifier}rem;
             --fs-200: ${0.9 * modifier}rem;
             --fs-300: ${1 * modifier}rem;
@@ -27,11 +35,26 @@ function update() {
             --fs-dynamic-2: calc((${14 * modifier}px + 1vw) / 2);
             --fs-dynamic-3: calc((${16 * modifier}px + 1vw) / 2);
             --fs-dynamic-4: calc((${17 * modifier}px + 1vw) / 2);
-        }`;
+            /* colors */
+            --bg-100: ${useHighContrast ? '#000000' : '#ffffff'};
+            --bg-200: ${useHighContrast ? '#151515' : '#f4f5f8'};
+            --bg-300: ${useHighContrast ? '#1f1f1f' : '#eef0f5'};
+            --bg-400: ${useHighContrast ? '#2b2b2b' : '#e3e6ee'};
+            --bg-accent: ${useHighContrast ? '#f4a024' : '#e6488b'};
+            /* typography */
+            --clr-100: ${useHighContrast ? '#33506b' : '#ffffff'};
+            --clr-200: #6c799a;
+            --clr-300: ${useHighContrast ? '#0080ff' : '#33506b'};
+            --clr-accent: ${useHighContrast ? '#f4a024' : '#e6488b'};
+            --clr-input: ${useHighContrast ? '#ffe000' : '#192734'};
+            --clr-link: ${useHighContrast ? '#19f311' : '#7a11f3'};
+        }
+        `;
     oldSheet && head.removeChild(oldSheet);
     head.appendChild(sheet);
 }
 
+//listiners
 addBtn.forEach((btn) => {
     btn.addEventListener('click', () => {
         modifier += 0.25;
@@ -52,4 +75,18 @@ subBtn.forEach((btn) => {
     });
 });
 
+contrastBtn.forEach((btn) => {
+    btn.addEventListener('click', () => {
+        useHighContrast = !useHighContrast;
+
+        gridBg.style.background = `${
+            useHighContrast
+                ? 'url(./images/ninja-bg--dark.png) center no-repeat'
+                : 'url(./images/ninja-bg.png) center no-repeat'
+        }`;
+        update();
+    });
+});
+
+//invoke update on load
 update();

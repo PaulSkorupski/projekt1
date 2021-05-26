@@ -1,11 +1,11 @@
 .nav {
     height: 42px;
-    background-color: $bg-400;
+    background-color: var(--bg-400);
     text-align: center;
     font-family: $ff-main;
     font-size: var(--fs-200);
     font-weight: 400;
-    color: $clr-300;
+    color: var(--clr-300);
     .nav-align {
         display: flex;
         flex-wrap: nowrap;
@@ -23,12 +23,12 @@
         cursor: pointer;
         transition: background-color 150ms ease, color 150ms ease;
         &:hover:not(.divider) {
-            background-color: $bg-accent;
-            color: $clr-100;
+            background-color: var(--bg-accent);
+            color: var(--clr-100);
         }
     }
     .nav-border {
-        border-right: 1.5px solid $bg-100;
+        border-right: 1.5px solid var(--bg-100);
     }
     .divider {
         flex: 1;

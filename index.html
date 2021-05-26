@@ -15,7 +15,7 @@
         <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
         <script defer src="./js/burger.js"></script>
         <script defer src="./js/slider.js"></script>
-        <script defer src="./js/fontscale.js"></script>
+        <script defer src="./js/dispatcher.js"></script>
     </head>
     <body>
         <nav class="nav">
@@ -46,16 +46,16 @@
                     <div class="search-box-cont">
                         <input class="search-box-inp" type="text" placeholder="szukaj">
                     </div>
-                    <div class="burger-custom">
-                        <div class="opt-font burger-item"><span class="font-dec">&#8212;</span> A <span class="font-inc">+</span></div>
-                        <div class="opt-theme burger-item">
+                    <ul class="burger-custom">
+                        <li class="opt-font burger-item"><span class="font-dec">&#8212;</span> A <span class="font-inc">+</span></li>
+                        <li class="opt-theme burger-item">
                             <div class="opt-theme-ico"></div>
-                        </div>
-                        <div class="temp-cont burger-item">
+                        </li>
+                        <li class="temp-cont burger-item">
                             <div class="temp-ico"></div>
                             <div class="temp-font">24°C</div>
-                        </div>
-                    </div>
+                        </li>
+                    </ul>
                 </div>
                 <div class="divider"></div>
                 <div class="burger-links-cont">
@@ -523,36 +523,38 @@
                 </div>
             </div>
         </section>
-        <footer class="footer">
-            <div class="footer-align">
-                <a href="#">
-                    <div class="footer-item">
-                        <img class="footer-img" src="./images/copy1.png" alt="pfr" loading='lazy' />
-                    </div>
-                </a>
-                <a href="#">
-                    <div class="footer-item">
-                        <img class="footer-img" src="./images/copy2.png" alt="fundusze" loading='lazy' />
-                    </div>
-                </a>
-                <a href="#">
-                    <div class="footer-item">
-                        <img src="./images/copy3.png" alt="stat4u" loading='lazy' />
-                    </div>
-                </a>
+        <footer>
+            <div class="footer">
+                <div class="footer-align">
+                    <a href="#">
+                        <div class="footer-item">
+                            <img class="footer-img" src="./images/copy1.png" alt="pfr" loading='lazy' />
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="footer-item">
+                            <img class="footer-img" src="./images/copy2.png" alt="fundusze" loading='lazy' />
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="footer-item">
+                            <img src="./images/copy3.png" alt="stat4u" loading='lazy' />
+                        </div>
+                    </a>
+                </div>
             </div>
-        </footer>
-        <footer class="footer-copyright">
-            <div class="footer-copyright-cont">
-                <p class="copyright-font"><a href="#">© 2021 Sanatorium Uzdrowiskowe “Chemik”</a></p>
-            </div>
-            <div class="footer-copyright-cont">
-                <p class="copyright-font dark">Polityka prywatności <span class="footer-pipe">|</span><a href="#"> RODO</a></p>
-            </div>
-            <div class="footer-copyright-cont">
-                <p class="copyright-font">
-                    <a href="#">Wykonanie JW WebDev</a>
-                </p>
+            <div class="footer-copyright">
+                <div class="footer-copyright-cont">
+                    <p class="copyright-font"><a href="#">© 2021 Sanatorium Uzdrowiskowe “Chemik”</a></p>
+                </div>
+                <div class="footer-copyright-cont">
+                    <p class="copyright-font dark">Polityka prywatności <span class="footer-pipe">|</span><a href="#"> RODO</a></p>
+                </div>
+                <div class="footer-copyright-cont">
+                    <p class="copyright-font">
+                        <a href="#">Wykonanie JW WebDev</a>
+                    </p>
+                </div>
             </div>
         </footer>
         <div class="chat">

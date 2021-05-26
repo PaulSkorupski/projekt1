@@ -1,5 +1,5 @@
 .offers {
-    background-color: $bg-200;
+    background-color: var(--bg-200);
     padding-bottom: 32px;
 }
 
@@ -19,15 +19,15 @@
         .offer {
             height: 320px;
             margin: 16px;
-            background-color: $bg-300;
+            background-color: var(--bg-300);
             display: flex;
             flex-flow: column nowrap;
-            color: $clr-300;
+            color: var(--clr-300);
             cursor: pointer;
             transition: all 300ms ease;
             &:hover {
-                background-color: $bg-accent;
-                color: $clr-100;
+                background-color: var(--bg-accent);
+                color: var(--clr-100);
             }
             .offer-thumbnail {
                 width: 100%;

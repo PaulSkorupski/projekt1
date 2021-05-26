@@ -1,5 +1,5 @@
 .newsletter {
-    background-color: $bg-400;
+    background-color: var(--bg-400);
     padding: 130px 0;
     .section-title-cont {
         padding-top: 0;
@@ -16,7 +16,7 @@
     flex-flow: row wrap;
     justify-content: center;
     font-family: $ff-main;
-    color: $clr-300;
+    color: var(--clr-300);
     line-height: 1.6;
 }
 
