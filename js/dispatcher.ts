@@ -1,4 +1,5 @@
 const head = document.querySelector('head')!;
+const gridBg: HTMLDivElement = document.querySelector('.about-content-grid')!;
 
 //button nodes
 const addBtn: NodeListOf<HTMLSpanElement> =
@@ -45,6 +46,8 @@ function update(): void {
             --clr-200: #6c799a;
             --clr-300: ${useHighContrast ? '#0080ff' : '#33506b'};
             --clr-accent: ${useHighContrast ? '#f4a024' : '#e6488b'};
+            --clr-input: ${useHighContrast ? '#ffe000' : '#192734'};
+            --clr-link: ${useHighContrast ? '#19f311' : '#7a11f3'};
         }
         `;
     oldSheet && head.removeChild(oldSheet);
@@ -75,6 +78,12 @@ subBtn.forEach((btn) => {
 contrastBtn.forEach((btn) => {
     btn.addEventListener('click', () => {
         useHighContrast = !useHighContrast;
+
+        gridBg.style.background = `${
+            useHighContrast
+                ? 'url(./images/ninja-bg--dark.png) center no-repeat'
+                : 'url(./images/ninja-bg.png) center no-repeat'
+        }`;
         update();
     });
 });

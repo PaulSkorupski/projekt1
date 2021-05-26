@@ -30,7 +30,7 @@ a {
     bottom: 2%;
     cursor: pointer;
     z-index: 999;
-    background-color: #ca2e6d;
+    background-color: var(--bg-accent);
     display: flex;
     align-items: center;
     padding: 10px 15px;
@@ -44,11 +44,11 @@ a {
         background-color: #00f738;
         top: 0;
         left: 0;
-        border: 2px solid $bg-100;
+        border: 2px solid var(--bg-100);
     }
     .chat-font {
         flex: 1;
-        color: $clr-100;
+        color: var(--clr-100);
         font-family: $ff-main;
     }
     .chat-ico {
@@ -69,7 +69,7 @@ a {
     align-items: center;
     flex-flow: column nowrap;
     font-family: $ff-main;
-    color: $clr-300;
+    color: var(--clr-300);
     .title-cont {
         display: flex;
         align-items: center;
@@ -86,7 +86,7 @@ a {
         .title-divider {
             height: 2px;
             width: 60%;
-            background-color: $bg-accent;
+            background-color: var(--bg-accent);
             margin: 10px 0;
         }
     }
@@ -96,7 +96,7 @@ a {
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
-    color: $clr-accent;
+    color: var(--clr-accent);
     font-size: var(--fs-300);
     margin-top: 30px;
     .btn-arrow {
@@ -107,14 +107,14 @@ a {
 input,
 textarea {
     all: unset;
-    background-color: $clr-100;
+    background-color: var(--bg-100);
     margin-bottom: 15px;
     font-family: $ff-main;
     font-size: var(--fs-300);
-    color: #192734;
+    color: var(--clr-input);
     padding: 10px 20px;
     width: 70%;
     &::placeholder {
-        color: $clr-300;
+        color: var(--clr-300);
     }
 }

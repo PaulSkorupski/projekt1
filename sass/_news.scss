@@ -1,5 +1,5 @@
 .news {
-    background-color: $bg-300;
+    background-color: var(--bg-300);
     padding: 130px 0;
     .section-title-cont {
         padding-top: 0;
@@ -23,7 +23,7 @@
     flex-flow: column nowrap;
     align-items: flex-end;
     font-family: $ff-main;
-    color: $clr-300;
+    color: var(--clr-300);
     line-height: 1.3;
     font-size: var(--fs-300);
     .news-date {
@@ -34,14 +34,14 @@
 .news-divider {
     height: 210px;
     width: 2px;
-    background: $bg-100;
+    background: var(--bg-100);
     margin: 0 60px;
 }
 
 .news-content-cont {
     flex: 4;
     font-family: $ff-main;
-    color: $clr-300;
+    color: var(--clr-300);
     line-height: 1.5;
     .news-font-cont {
         .news-font {

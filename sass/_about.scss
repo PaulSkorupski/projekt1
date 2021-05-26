@@ -1,5 +1,6 @@
 .about {
     padding-bottom: 130px;
+    background: var(--bg-100);
 }
 
 .about-align {
@@ -17,13 +18,13 @@
 
 .about-content-grid {
     display: flex;
-    background: url(../images/ninja-bg.png) center no-repeat $clr-100;
+    background: url(../images/ninja-bg.png) center no-repeat var(--bg-100);
 }
 
 .about-content-cont {
     font-family: $ff-main;
     font-size: var(--fs-300);
-    color: $clr-300;
+    color: var(--clr-300);
     line-height: 1.35;
     flex: 1;
     margin-right: 50px;

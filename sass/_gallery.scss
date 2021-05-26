@@ -1,5 +1,5 @@
 .gallery {
-    background-color: $bg-100;
+    background-color: var(--bg-100);
     padding: 130px 0;
     .section-title-cont {
         padding-top: 0;
@@ -12,7 +12,7 @@
 
     .section-tag {
         font-family: $ff-main;
-        color: $clr-300;
+        color: var(--clr-300);
         font-size: var(--fs-800);
         text-align: center;
     }
@@ -33,7 +33,7 @@
     margin: 50px 20px;
     transition: background-color 300ms ease;
     &:hover {
-        background-color: $bg-400;
+        background-color: var(--bg-400);
     }
     .gallery-thumbnail {
         width: 100%;
@@ -43,7 +43,7 @@
         padding: 20px 0;
         font-family: $ff-main;
         font-size: var(--fs-400);
-        color: $clr-300;
+        color: var(--clr-300);
         text-align: center;
         .gallery-title-action {
             margin-top: 10px;

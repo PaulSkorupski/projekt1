@@ -1,5 +1,5 @@
 .contact {
-    background-color: $bg-200;
+    background-color: var(--bg-200);
     padding: 130px 0;
     .section-title-cont {
         padding-top: 0;
@@ -17,7 +17,7 @@
     align-items: center;
     justify-content: center;
     font-family: $ff-main;
-    color: $clr-300;
+    color: var(--clr-300);
     line-height: 1.6;
 }
 
@@ -38,7 +38,7 @@
             text-decoration: none;
             transition: color 150ms ease;
             &:hover {
-                color: #06090c;
+                color: var(--clr-link);
             }
         }
         span {
@@ -46,7 +46,7 @@
         }
     }
     .mail {
-        color: $clr-accent;
+        color: var(--clr-accent);
     }
 }
 
