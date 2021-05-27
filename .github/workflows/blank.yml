@@ -1,0 +1,11 @@
+name: Incognito mode
+
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: ESLint
+        uses: iCrawl/action-eslint@v1
