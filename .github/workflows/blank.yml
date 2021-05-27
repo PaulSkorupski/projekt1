@@ -1,0 +1,11 @@
+name: Incognito mode
+
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Incognito mode es
+      - uses: actions/checkout@v2uses: florrdv/JS-Obfuscator@v1.0.2
