@@ -1,0 +1,3 @@
+# Skip all compiled js files
+
+*.js
