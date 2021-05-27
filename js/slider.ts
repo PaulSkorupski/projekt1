@@ -8,12 +8,14 @@ let intervalIdx = 0;
 let ticks = 0;
 
 const setActive = (index: number) => {
-    //dots
+
+    // Dots
     dots.forEach((dot) => {
         dot.classList.remove('dot-active');
     });
     dots[index].classList.add('dot-active');
-    //images
+
+    // Images
     imgs.forEach((img) => {
         img.classList.remove('image-active');
     });
@@ -28,7 +30,7 @@ dots.forEach((dot) => {
     });
 });
 
-//autoplay listiners, if user mouses over a dot or img, stop autoplay
+// Autoplay listiners, if user mouses over a dot or img, stop autoplay
 imgs.forEach((img) => {
     img.addEventListener('mouseenter', () => {
         isControling = true;
@@ -58,7 +60,8 @@ dots.forEach((dot) => {
 setInterval(() => {
     if (!isControling) {
         ticks++;
-        //prevent overflow
+
+        // Prevent overflow
         if (ticks === 4) {
             if (intervalIdx === 3) {
                 intervalIdx = 0;

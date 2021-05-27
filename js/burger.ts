@@ -10,19 +10,24 @@ const chat: HTMLDivElement = document.querySelector('.chat')!;
 let isOpened = false;
 
 btn.addEventListener('click', () => {
+
+    let burger_active = 'burger-active';
+
     if (!isOpened) {
-        path1.classList.add('burger-active');
-        path2.classList.add('burger-active');
-        path3.classList.add('burger-active');
+        path1.classList.add(burger_active);
+        path2.classList.add(burger_active);
+        path3.classList.add(burger_active);
         nav.style.display = 'block';
         chat.style.display = 'none';
         isOpened = true;
+
     } else {
-        path1.classList.remove('burger-active');
-        path2.classList.remove('burger-active');
-        path3.classList.remove('burger-active');
+        path1.classList.remove(burger_active);
+        path2.classList.remove(burger_active);
+        path3.classList.remove(burger_active);
         nav.style.display = 'none';
         chat.style.display = 'flex';
         isOpened = false;
     }
+
 });

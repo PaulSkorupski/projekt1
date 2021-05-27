@@ -1,7 +1,7 @@
 const head = document.querySelector('head')!;
 const gridBg: HTMLDivElement = document.querySelector('.about-content-grid')!;
 
-//button nodes
+// Button nodes
 const addBtn: NodeListOf<HTMLSpanElement> =
     document.querySelectorAll('.font-inc')!;
 const subBtn: NodeListOf<HTMLSpanElement> =
@@ -9,11 +9,11 @@ const subBtn: NodeListOf<HTMLSpanElement> =
 const contrastBtn: NodeListOf<HTMLLIElement> =
     document.querySelectorAll('.opt-theme')!;
 
-//control vars
+// Control vars
 let modifier = 1;
 let useHighContrast = false;
 
-//dispatch
+// Dispatch
 function update(): void {
     const oldSheet = document.querySelector('style');
     const sheet = document.createElement('style');
@@ -54,7 +54,7 @@ function update(): void {
     head.appendChild(sheet);
 }
 
-//listiners
+// Listeners
 addBtn.forEach((btn) => {
     btn.addEventListener('click', () => {
         modifier += 0.25;
@@ -88,5 +88,5 @@ contrastBtn.forEach((btn) => {
     });
 });
 
-//invoke update on load
+// Invoke update on load
 update();
