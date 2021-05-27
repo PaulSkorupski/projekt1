@@ -8,4 +8,5 @@ jobs:
 
     steps:
       # Incognito mode es
-      - uses: actions/checkout@v2uses: florrdv/JS-Obfuscator@v1.0.2
+      - name: Obfuscate-Javascript
+        uses: florrdv/JS-Obfuscator@v1.0.2
