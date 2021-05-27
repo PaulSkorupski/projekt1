@@ -5,8 +5,7 @@ on: [push]
 jobs:
   build:
     runs-on: ubuntu-latest
-
+    
     steps:
-      # Incognito mode es
-      - name: Obfuscate-Javascript
-        uses: florrdv/JS-Obfuscator@v1.0.2
+			- name: ESLint
+        uses: iCrawl/action-eslint@v1
